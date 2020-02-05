@@ -1,0 +1,9 @@
+.header {
+    height: 49px;
+    line-height: 45px;
+    background: #f9f9f9;
+}
+.body-padd {
+    height: 500px;
+    padding-top: 150px;
+}
