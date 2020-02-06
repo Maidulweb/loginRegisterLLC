@@ -12,3 +12,13 @@
 */
 
 Route::get('/', 'indexController@index')->name('index');
+
+Route::namespace('Login')->group(function(){
+    Route::get('/register', 'LoginregisterController@register')->name('register');
+    Route::post('/register', 'LoginregisterController@registerprocess');
+
+    Route::get('/login', 'LoginregisterController@login')->name('login');
+    Route::post('/login', 'LoginregisterController@loginprocess');
+});
+
+

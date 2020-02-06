@@ -15,6 +15,11 @@ class CreateLoginRegistersTable extends Migration
     {
         Schema::create('login_registers', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('gender');
+            $table->string('email');
+            $table->string('password');
             $table->timestamps();
         });
     }

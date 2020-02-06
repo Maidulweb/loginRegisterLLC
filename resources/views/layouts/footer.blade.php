@@ -37,10 +37,10 @@
                         <div class="footer-first">
                         <h4>Second Footer</h4>
                           <ul>
-                            <li><a href=""><i class="fab fa-facebook-f"></i>Facebook</a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i>Twitter</a></li>
-                            <li><a href=""><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
-                            <li><a href=""><i class="fab fa-youtube"></i>Youtube</a></li>
+                            <li><a href=""><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;Facebook</a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</a></li>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;Linkedin</a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i>&nbsp;&nbsp;Youtube</a></li>
                           </ul>
                         </div>
                     </div>
