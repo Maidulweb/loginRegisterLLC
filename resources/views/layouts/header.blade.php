@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="top-header-right">
-                      <a href="">Login</a> <a href="">Register</a>
+                      <a href="{{route('login')}}">Login</a> <a href="{{route('register')}}">Register</a>
                     </div>
                 </div>
                </div>
