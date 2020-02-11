@@ -18,3 +18,6 @@ Route::post('/register', 'indexController@registerprocess');
 
 Route::get('/login', 'indexController@login')->name('login');
 Route::post('/login', 'indexController@loginprocess');
+
+Route::get('/profile', 'indexController@profile')->name('profile');
+Route::get('/logout', 'indexController@logout')->name('logout');

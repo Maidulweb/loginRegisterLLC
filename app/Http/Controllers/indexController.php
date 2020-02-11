@@ -32,14 +32,11 @@ class indexController extends Controller
        try {
            User::create($data);
 
-           session()->flash('message', 'Registration successfully!');
-           session()->flash('type', 'success');
+           $this->successmsg('Registration successfully!');
            return redirect()->route('login');
 
        }catch(Exception $e){
-
-        session()->flash('message', $e->getMessage());
-        session()->flash('type', 'danger');
+        $this->successmsg($e->getMessage());
            return redirect()->back();
 
        }
@@ -55,13 +52,23 @@ class indexController extends Controller
         $credentials = $request->except(['_token','name']);
         if(auth()->attempt($credentials))
         {
-           session()->flash('message', 'Login successfully!');
-           session()->flash('type', 'success');
+            $this->successmsg('Login successfully!');
             return redirect()->route('index');
         }
-           session()->flash('message', 'Invalide email or password');
-           session()->flash('type', 'danger');
+        $this->errormsg('Invalide email or password!');
             return redirect()->back();
 
+    }
+
+    public function profile ()
+    {
+
+    }
+
+    public function logout () 
+    {   
+        auth()->logout();
+        $this->successmsg('Logout successfully');
+            return redirect()->route('index');
     }
 }

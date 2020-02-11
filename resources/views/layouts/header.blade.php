@@ -20,7 +20,13 @@
                 </div>
                 <div class="col-md-4">
                     <div class="top-header-right">
+                    @auth
+                      <a href="{{route('profile')}}">Profile({{optional(auth()->user())->name}})</a> <a href="{{route('logout')}}">Logout</a>
+                    @endauth
+                    @guest
                       <a href="{{route('login')}}">Login</a> <a href="{{route('register')}}">Register</a>
+                    @endguest
+                      
                     </div>
                 </div>
                </div>
